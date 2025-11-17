@@ -1074,8 +1074,14 @@ body {
 }
 @media screen and (max-width: 375px) {
   .main__info-block {
-    top: 123px;
+    top: 72px;
     right: -7px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main__info-block {
+    top: 73px;
+    right: -39px;
   }
 }
 
