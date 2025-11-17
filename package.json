@@ -1,0 +1,19 @@
+{
+  "name": "tz-adaptive",
+  "version": "1.0.0",
+  "description": "FavBet Casino landing page",
+  "scripts": {
+    "sass:watch": "sass --watch style.scss:style.css --style expanded --source-map",
+    "sass:build": "sass style.scss:style.css --style compressed --no-source-map",
+    "pug:build": "pug index.pug --out . --pretty",
+    "pug:watch": "pug index.pug --out . --pretty --watch",
+    "serve": "npx http-server . -p 8080 -o",
+    "dev": "npx http-server . -p 8080 -o"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
+
+
