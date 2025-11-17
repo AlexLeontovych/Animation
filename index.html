@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FavBet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://pixijs.download/release/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="main__left-side">
+          <div class="header">
+            <div class="header__container"><img class="header__logo" src="./assets/logo-1x.png" srcset="./assets/logo-1x.png 1x, ./assets/logo-2x.png 2x" alt="FavBet logo"></div>
+          </div>
+          <div class="main__visual">
+            <div class="main__picture main__picture--pharaon"><img src="./assets/pharaon-1x.png" srcset="./assets/pharaon-1x.png 1x, ./assets/pharaon-2x.png 2x" alt="Pharaon image"></div>
+            <div class="main__picture main__picture--coala"><img class="main__picture--coala-image" src="./assets/coala-1x.png" srcset="./assets/coala-1x.png 1x, ./assets/coala-2x.png 2x" alt="Coala image"></div>
+          </div>
+        </div>
+        <div class="main__right-side">
+          <div class="main__info-block">
+            <div class="main__info-block-image-wrapper"><img class="main__info-block-image" src="./assets/infoBlock__img-1x.png" srcset="./assets/infoBlock__img-1x.png 1x, ./assets/infoBlock__img-2x.png 2x" alt="Info block image"></div>
+            <div class="main__info-block-text">
+              <p class="main__info-block-text-title">BONUS <span class="main__info-block-text-title--highlight">150%</span><br>PÂNĂ LA <span class="main__info-block-text-title--highlight">2000 LEI</span></p>
+            </div>
+            <div class="main__info-block-secondary">
+              <div class="main__info-block-secondary-item">
+                <p class="main__info-block-secondary-text">PARIU FĂRĂ</p>
+                <p class="main__info-block-secondary-text">RISC 250 LEI</p>
+              </div>
+              <div class="main__info-block-secondary-separator"><img src="./assets/infoBlock__circle-1x.png" srcset="./assets/infoBlock__circle-1x.png 1x, ./assets/infoBlock__circle-2x.png 2x" alt="Plus separator"></div>
+              <div class="main__info-block-secondary-item">
+                <p class="main__info-block-secondary-text">PÂNĂ LA 725 DE</p>
+                <p class="main__info-block-secondary-text">ROTIRI GRATUITE</p>
+              </div>
+            </div>
+            <div class="main__info-block-button">
+              <button class="main__info-block-button-text button__for-desktop"><span class="main__info-block-button-border-bottom"></span><span class="main__info-block-button-border-left"></span><span class="main__info-block-button-text-content">PLASEAZĂ UN PARIU</span></button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="background">
+        <canvas class="background__snow"></canvas><img class="background__left-lightning" src="./assets/left-light.png" alt="Lightning"><img class="background__right-lightning" src="./assets/right-light.png" alt="Lightning"><img class="background__right-second" src="./assets/right-light.png" alt="Lightning"><img class="background__gradient" src="./assets/gradient-bg.png" alt="Gradient"><img class="background__firework-first" src="./assets/firework1-1x.png" srcset="./assets/firework1-1x.png 1x, ./assets/firework1-2x.png 2x" alt="Firework image"><img class="background__firework-second" src="./assets/firework2-1x.png" srcset="./assets/firework2-1x.png 1x, ./assets/firework2-2x.png 2x" alt="Firework image"><img class="background__firework-third" src="./assets/firework3-1x.png" srcset="./assets/firework3-1x.png 1x, ./assets/firework3-2x.png 2x" alt="Firework image"><img class="background__firework-fourth" src="./assets/firework4-1x.png" srcset="./assets/firework4-1x.png 1x, ./assets/firework4-2x.png 2x" alt="Firework image"><img class="background__pyramids" src="./assets/pyramids-1x.png" srcset="./assets/pyramids-1x.png 1x, ./assets/pyramids-2x.png 2x" alt="Pyramids"><img class="background__people" src="./assets/bg-1x.png" srcset="./assets/bgWithPeople-1x.png 1x, ./assets/bgWithPeople-2x.png 2x" alt="People">
+      </div>
+      <div class="disclaimer">
+        <p class="disclaimer-text">L1200662W001197.<br>Se aplică T&C</p>
+        <div class="disclaimer-images"><img class="disclaimer-first-img" src="./assets/disclaimer_first-1x.png" srcset="./assets/disclaimer_first-1x.png 1x, ./assets/disclaimer_first-2x.png 2x" alt="Disclaimer"><img class="disclaimer-second-img" src="./assets/disclaimer_second-1x.png" srcset="./assets/disclaimer_second-1x.png 1x, ./assets/disclaimer_second-2x.png 2x" alt="Disclaimer"></div>
+      </div>
+      <div class="background__for-mobile">
+        <button class="main__info-block-button-text button__for-mobile"><span class="main__info-block-button-border-bottom"></span><span class="main__info-block-button-border-left"></span><span class="main__info-block-button-text-content">PLASEAZĂ UN PARIU</span></button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="gsap-animations.js"></script>
+  </body>
+</html>
