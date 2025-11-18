@@ -7,13 +7,7 @@ gsap.set(".background__left-lightning, .background__right-lightning, .background
 const text = new SplitText('.main__info-block-text-title', { type: 'words' });
 
  introAnimations = gsap.timeline()
- .from('.main__picture--coala', { autoAlpha: 0, x: -500, duration: 1, ease: 'power2.inOut' })
-.from('.main__info-block-header', { autoAlpha: 0, y: -250, duration: 0.75}, "<")
-.from(text.words, { autoAlpha: 0, y: 50, ease: "power1.out", duration: 0.75, stagger: {each: 0.09 }}, ">")
-.from(".main__info-block-secondary-separator", { rotate: 360, scale: 0, ease: "power1.out", duration: 0.75}, ">")
-.from(".main__info-block-secondary-item", { autoAlpha: 0, y: 50, ease: "power1.out", duration: 0.75, stagger: {each: 0.09 }}, ">")
-.from('.main__info-block-button', { autoAlpha: 0, scale: 1.2, ease: "power1.out", duration: 0.75}, ">")
-.to(".main__info-block-button:not(.main__info-block-button-text-content)", {scale: 1.05, ease: "power1.inOut", duration: 0.75, yoyo: true, repeat: -1}, ">") 
+.from(text.words, { autoAlpha: 0, y: 50, ease: "power1.out", duration: 0.75, stagger: {each: 0.09 }}, ">") 
 .to(".background__pyramids", { filter: "brightness(1.2)", ease: "sine.inOut", yoyo: true, repeat: -1 }, "<")
 .to(".background__left-lightning, .background__right-lightning, .background__right-second", { filter: "brightness(2)", duration: 1, ease: "sine.inOut", yoyo: true, repeat: -1 }, "<")
 
