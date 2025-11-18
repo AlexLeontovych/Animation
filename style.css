@@ -299,17 +299,42 @@ body {
   padding-top: 120px;
 }
 
-.main__info-block-image-wrapper {
+.main__info-block-header-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  width: fit-content !important;
+  height: fit-content !important;
 }
 
-.main__info-block-image {
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
+.main__info-block-header {
+  background-color: #FF267E;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 58px;
+  width: 675px;
+  height: 90px;
+  gap: 30px;
+}
+
+.main__info-block-header--bold {
+  font-family: "Suisse Intl", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 8px;
+}
+
+.main__info-block-header--italic {
+  font-family: "Wulkan Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .main__info-block-text {
@@ -523,9 +548,14 @@ body {
     left: -9px;
     bottom: -27px;
   }
-  .main__info-block-image-wrapper {
-    height: 72px;
+  .main__info-block-header {
     width: 480px;
+    height: 64px;
+    font-size: 42px;
+    gap: 15px;
+  }
+  .main__info-block-header--bold {
+    margin-top: 6.5px;
   }
   .main__info-block-text-title {
     font-size: 55px;
@@ -628,15 +658,17 @@ body {
     left: -58px;
     bottom: -17px;
   }
-  .main__info-block-image-wrapper {
-    justify-content: flex-end;
-    height: 60px;
-    width: 480px;
-    margin-bottom: 20px;
-  }
-  .main__info-block-image {
+  .main__info-block-header {
     width: 436px;
     height: 60px;
+    gap: 19px;
+    font-size: 38px;
+  }
+  .main__info-block-header--bold {
+    margin-right: 6px;
+  }
+  .main__info-block-header--italic {
+    margin-top: 6;
   }
   .main__info-block-text {
     margin-bottom: 20px;
@@ -740,15 +772,19 @@ body {
     left: -160px;
     bottom: -11px;
   }
-  .main__info-block-image-wrapper {
+  .main__info-block-header-wrapper {
     justify-content: flex-end;
     height: 60px;
     width: 436px;
     margin-bottom: 20px;
   }
-  .main__info-block-image {
+  .main__info-block-header {
     width: 436px;
-    height: 60px;
+    height: 58px;
+    font-size: 38px;
+  }
+  .main__info-block-header--bold {
+    margin-top: 6.5px;
   }
   .main__right-side {
     position: absolute;
@@ -847,16 +883,21 @@ body {
     left: -160px;
     bottom: -11px;
   }
-  .main__info-block-image-wrapper {
+  .main__info-block-header-wrapper {
     justify-content: center;
     align-items: center;
     height: 60px;
     width: 436px;
     margin-bottom: 10px;
   }
-  .main__info-block-image {
+  .main__info-block-header {
     width: 270px;
     height: 36px;
+    font-size: 23px;
+    gap: 6px;
+  }
+  .main__info-block-header--bold {
+    margin-top: 3px;
   }
   .main__info-block-button {
     position: absolute;
@@ -978,12 +1019,12 @@ body {
     left: -160px;
     bottom: -11px;
   }
-  .main__info-block-image-wrapper {
+  .main__info-block-header-wrapper {
     justify-content: center;
     align-items: center;
     height: 60px;
     width: 436px;
-    margin-bottom: -8px;
+    margin-bottom: 8px;
   }
   .main__info-block-secondary-separator img {
     width: 30px;
@@ -991,10 +1032,6 @@ body {
   }
   .main__info-block-secondary {
     gap: 8px;
-  }
-  .main__info-block-image {
-    width: 230px;
-    height: 30px;
   }
   .main__info-block-button {
     position: absolute;
@@ -1082,6 +1119,14 @@ body {
   .main__info-block {
     top: 73px;
     right: -39px;
+  }
+  .main__info-block-header {
+    width: 230px;
+    height: 30px;
+    font-size: 19px;
+  }
+  .main__info-block-header--bold {
+    margin-top: 3px;
   }
 }
 
