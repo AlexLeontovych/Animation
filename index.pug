@@ -18,40 +18,40 @@ html(lang="ro")
             .header__container
               img.header__logo(src="./assets/logo-1x.png" srcset="./assets/logo-1x.png 1x, ./assets/logo-2x.png 2x" alt="FavBet logo")
 
-          .main__visual
-            .main__background-mobile
-            .main__picture.main__picture--pharaon
+          .visual
+            .visual__background-mobile
+            .visual__picture.visual__picture--pharaon
               img(src="./assets/pharaon-1x.png" srcset="./assets/pharaon-1x.png 1x, ./assets/pharaon-2x.png 2x" alt="Pharaon image")
-            .main__picture.main__picture--coala
-              img.main__picture--coala-image(src="./assets/coala-1x.png" srcset="./assets/coala-1x.png 1x, ./assets/coala-2x.png 2x" alt="Coala image")
+            .visual__picture.visual__picture--coala
+              img.visual__picture--coala-image(src="./assets/coala-1x.png" srcset="./assets/coala-1x.png 1x, ./assets/coala-2x.png 2x" alt="Coala image")
 
         .main__right-side
           .main__info-block
             .main__info-block-header-wrapper
-              .main__info-block-header
-                span.main__info-block-header--bold ORAȘUL
-                span.main__info-block-header--italic  DISTRAȚIEI
+              .info-block-header
+                span.info-block-header--bold ORAȘUL
+                span.info-block-header--italic  DISTRAȚIEI
             .main__info-block-text
-              p.main__info-block-text-title
+              p.info-block-text
                 | BONUS 
-                span.main__info-block-text-title--highlight 150%
+                span.info-block-text--highlight 150%
                 br
                 | PÂNĂ LA 
-                span.main__info-block-text-title--highlight 2000 LEI
+                span.info-block-text--highlight 2000 LEI
             .main__info-block-secondary
-              .main__info-block-secondary-item
-                p.main__info-block-secondary-text PARIU FĂRĂ
-                p.main__info-block-secondary-text RISC 250 LEI
-              .main__info-block-secondary-separator
+              .info-block-secondary
+                p.info-block-secondary-text PARIU FĂRĂ
+                p.info-block-secondary-text RISC 250 LEI
+              .info-block-secondary-separator
                 img(src="./assets/infoBlock__circle-1x.png" srcset="./assets/infoBlock__circle-1x.png 1x, ./assets/infoBlock__circle-2x.png 2x" alt="Plus separator")
-              .main__info-block-secondary-item
-                p.main__info-block-secondary-text PÂNĂ LA 725 DE
-                p.main__info-block-secondary-text ROTIRI GRATUITE
+              .info-block-secondary
+                p.info-block-secondary-text PÂNĂ LA 725 DE
+                p.info-block-secondary-text ROTIRI GRATUITE
             .main__info-block-button
-              button.main__info-block-button-text
-                span.main__info-block-button-border-bottom
-                span.main__info-block-button-border-left
-                span.main__info-block-button-text-content PLASEAZĂ UN PARIU
+              button.info-block-button
+                span.info-block-button-border
+                span.info-block-button-border
+                span.info-block-button-text PLASEAZĂ UN PARIU
 
       .background
         canvas.background__snow
@@ -74,12 +74,6 @@ html(lang="ro")
         .disclaimer-images
           img.disclaimer-first-img(src="./assets/disclaimer_first-1x.png" srcset="./assets/disclaimer_first-1x.png 1x, ./assets/disclaimer_first-2x.png 2x" alt="Disclaimer")
           img.disclaimer-second-img(src="./assets/disclaimer_second-1x.png" srcset="./assets/disclaimer_second-1x.png 1x, ./assets/disclaimer_second-2x.png 2x" alt="Disclaimer")
-
-   
-        //- button.main__info-block-button-text.button__for-mobile
-        //-   span.main__info-block-button-border-bottom
-        //-   span.main__info-block-button-border-left
-        //-   span.main__info-block-button-text-content PLASEAZĂ UN PARIU
 
     script(src="main.js")
     script(src="gsap-animations.js")
