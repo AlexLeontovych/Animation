@@ -509,7 +509,11 @@ body {
   color: #00003D;
   border: none;
   border-radius: 0;
-  padding: 18px 40px;
+  padding: 1em 2em;
+  width: auto;
+  min-width: fit-content;
+  height: auto;
+  min-height: fit-content;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -595,6 +599,22 @@ body {
   transition: height 0.3s ease 0.9s;
 }
 
+.main__info-block-button-text:not(:hover)::before {
+  transition: width 0.3s ease 0s;
+}
+
+.main__info-block-button-text:not(:hover)::after {
+  transition: height 0.3s ease 0s;
+}
+
+.main__info-block-button-text:not(:hover) .main__info-block-button-border-bottom {
+  transition: width 0.3s ease 0s;
+}
+
+.main__info-block-button-text:not(:hover) .main__info-block-button-border-left {
+  transition: height 0.3s ease 0s;
+}
+
 @media screen and (max-width: 1920px) {
   .background__pyramids {
     max-height: 781px;
@@ -614,8 +634,8 @@ body {
   }
 
   .main__info-block-button-text {
-    width: 400px;
-    height: 90px;
+    width: auto;
+    height: auto;
   }
 
   .main__right-side {
@@ -693,8 +713,8 @@ body {
   }
 
   .main__info-block-button-text {
-    width: 300px;
-    height: 66px;
+    width: auto;
+    height: auto;
   }
 
   .background__left-lightning {
@@ -857,8 +877,8 @@ body {
   }
 
   .main__info-block-button-text {
-    width: 272px;
-    height: 60px;
+    width: auto;
+    height: auto;
   }
 
   .background__left-lightning {
@@ -1120,8 +1140,8 @@ body {
   }
 
   .main__info-block-button-text {
-    width: 344px;
-    height: 54px;
+    width: auto;
+    height: auto;
     z-index: 11;
   }
 
@@ -1284,8 +1304,8 @@ body {
   }
 
   .main__info-block-button-text {
-    width: 344px;
-    height: 54px;
+    width: auto;
+    height: auto;
     z-index: 11;
   }
 
