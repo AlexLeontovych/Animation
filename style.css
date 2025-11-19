@@ -245,6 +245,9 @@ body {
   width: auto;
   height: auto;
   display: block;
+  opacity: 0;
+  transform: translateX(-300px);
+  animation: logoSlideIn 0.8s ease-out 0s forwards;
 }
 
 .main__visual {
@@ -479,6 +482,16 @@ body {
   }
   to {
     transform: scale(1.05);
+  }
+}
+@keyframes logoSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 @keyframes coalaSlideIn {
@@ -973,6 +986,9 @@ body {
   }
 }
 @media screen and (max-width: 630px) {
+  .main {
+    z-index: 11;
+  }
   .header__logo {
     max-width: 184px;
     width: auto;
@@ -1031,10 +1047,15 @@ body {
     margin-top: 3px;
   }
   .main__info-block-button {
-    position: absolute;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     justify-content: center;
-    top: 568px;
+    bottom: 15px;
     z-index: 11;
+    width: auto;
+    max-width: fit-content;
   }
   .main__info-block-button-text {
     width: auto;
@@ -1073,7 +1094,7 @@ body {
     height: 150px;
     flex-direction: column-reverse;
     left: 10px;
-    z-index: 10;
+    z-index: 11;
     bottom: 73px;
     align-items: flex-start;
   }
@@ -1094,7 +1115,7 @@ body {
     height: auto;
     object-fit: contain;
   }
-  .background__for-mobile {
+  .main__background-mobile {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1105,12 +1126,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .button__for-mobile {
-    display: block;
-  }
-  .button__for-desktop {
-    display: none;
   }
 }
 @media screen and (max-width: 528px) {
@@ -1168,10 +1183,15 @@ body {
     gap: 8px;
   }
   .main__info-block-button {
-    position: absolute;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     justify-content: center;
-    top: 568px;
+    bottom: 15px;
     z-index: 11;
+    width: auto;
+    max-width: fit-content;
   }
   .main__info-block-button-text {
     width: auto;
@@ -1199,7 +1219,6 @@ body {
     height: auto;
     flex-direction: column-reverse;
     left: 10px;
-    z-index: 10;
     bottom: 66px;
     align-items: flex-start;
     max-width: 120px;
@@ -1224,7 +1243,7 @@ body {
     height: auto;
     object-fit: contain;
   }
-  .background__for-mobile {
+  .main__background-mobile {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1235,15 +1254,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .button__for-mobile {
-    display: block;
-    width: 294px;
-    height: 46px;
-    font-size: 16px;
-  }
-  .button__for-desktop {
-    display: none;
   }
 }
 @media screen and (max-width: 375px) {

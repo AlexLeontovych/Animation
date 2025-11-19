@@ -19,6 +19,7 @@ html(lang="ro")
               img.header__logo(src="./assets/logo-1x.png" srcset="./assets/logo-1x.png 1x, ./assets/logo-2x.png 2x" alt="FavBet logo")
 
           .main__visual
+            .main__background-mobile
             .main__picture.main__picture--pharaon
               img(src="./assets/pharaon-1x.png" srcset="./assets/pharaon-1x.png 1x, ./assets/pharaon-2x.png 2x" alt="Pharaon image")
             .main__picture.main__picture--coala
@@ -47,7 +48,7 @@ html(lang="ro")
                 p.main__info-block-secondary-text PÂNĂ LA 725 DE
                 p.main__info-block-secondary-text ROTIRI GRATUITE
             .main__info-block-button
-              button.main__info-block-button-text.button__for-desktop
+              button.main__info-block-button-text
                 span.main__info-block-button-border-bottom
                 span.main__info-block-button-border-left
                 span.main__info-block-button-text-content PLASEAZĂ UN PARIU
@@ -74,11 +75,11 @@ html(lang="ro")
           img.disclaimer-first-img(src="./assets/disclaimer_first-1x.png" srcset="./assets/disclaimer_first-1x.png 1x, ./assets/disclaimer_first-2x.png 2x" alt="Disclaimer")
           img.disclaimer-second-img(src="./assets/disclaimer_second-1x.png" srcset="./assets/disclaimer_second-1x.png 1x, ./assets/disclaimer_second-2x.png 2x" alt="Disclaimer")
 
-      .background__for-mobile
-        button.main__info-block-button-text.button__for-mobile
-          span.main__info-block-button-border-bottom
-          span.main__info-block-button-border-left
-          span.main__info-block-button-text-content PLASEAZĂ UN PARIU
+   
+        //- button.main__info-block-button-text.button__for-mobile
+        //-   span.main__info-block-button-border-bottom
+        //-   span.main__info-block-button-border-left
+        //-   span.main__info-block-button-text-content PLASEAZĂ UN PARIU
 
     script(src="main.js")
     script(src="gsap-animations.js")

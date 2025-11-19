@@ -1,6 +1,6 @@
 gsap.registerPlugin(SplitText);
 
-gsap.set(".background__pyramids", { filter: "brightness(1)" });
+gsap.set(".background__pyramids, .background__gradient", { filter: "brightness(1)" });
 gsap.set(".background__firework-first, .background__firework-second, .background__firework-third, .background__firework-fourth", { filter: "brightness(1)" });
 gsap.set(".background__left-lightning, .background__right-lightning, .background__right-second", { filter: "brightness(1)" });
 
@@ -10,6 +10,7 @@ const text = new SplitText('.main__info-block-text-title', { type: 'words' });
 .from(text.words, { autoAlpha: 0, y: 50, ease: "power1.out", duration: 0.75, stagger: {each: 0.09 }}, ">") 
 .to(".background__pyramids", { filter: "brightness(1.2)", ease: "sine.inOut", yoyo: true, repeat: -1 }, "<")
 .to(".background__left-lightning, .background__right-lightning, .background__right-second", { filter: "brightness(2)", duration: 1, ease: "sine.inOut", yoyo: true, repeat: -1 }, "<")
+.to(".background__gradient", { filter: "brightness(2)", duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: -1 }, "<")
 
 lightningIntroAnimations = gsap.timeline()
 .from('.background__left-lightning', { autoAlpha: 0, duration: 1, ease: 'power2.inOut' })
